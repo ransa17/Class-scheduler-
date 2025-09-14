@@ -3,7 +3,6 @@ import jsPDF from 'jspdf';
 import 'jspdf-autotable'; 
 
 function ReviewApproval({ generated, onApprove, onSuggest }) {
-  // Helper to format timetable data for the PDF table
   const getTableData = () => {
     const allTableData = [];
     const classKeys = Object.keys(generated);
@@ -11,8 +10,8 @@ function ReviewApproval({ generated, onApprove, onSuggest }) {
     classKeys.forEach(className => {
       const classData = [
         [`Timetable for Class ${className}`],
-        [], // Empty row for spacing
-        ['Day', 'Period 1', 'Period 2', 'Period 3', 'Period 4'], // Assuming 4 periods per day
+        [], 
+        ['Day', 'Period 1', 'Period 2', 'Period 3', 'Period 4'], 
       ];
       
       const days = Object.keys(generated[className]);

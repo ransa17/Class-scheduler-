@@ -82,7 +82,7 @@ function WorkflowStepper() {
   return (
     <div style={{ fontFamily: "'Segoe UI', Roboto, sans-serif", maxWidth: '1000px', margin: 'auto', padding: '20px' }}>
       
-      {/* Progress Stepper UI */}
+     
       <div style={stepperStyle}>
         <div style={lineStyle}></div>
         {steps.map((s, index) => (

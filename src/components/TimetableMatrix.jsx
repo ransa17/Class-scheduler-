@@ -1,10 +1,10 @@
 import React from 'react';
 
 function TimetableMatrix({ classData, teacherData, onNext }) {
-  // Use arrays for dynamic data and a placeholder for periods
+  
   const classes = classData.map(c => c.className);
   const teachers = teacherData.map(t => t.name);
-  const periods = ['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8']; // Example periods for a full school day
+  const periods = ['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8']; 
 
   const matrix = {
     classes,
@@ -72,7 +72,7 @@ function TimetableMatrix({ classData, teacherData, onNext }) {
               <td style={tdStyle}>{period}</td>
               {classes.map((cls, classIndex) => (
                 <td key={classIndex} style={tdStyle}>
-                  {/* Placeholder for future subject/teacher allocation */}
+                 
                   -
                 </td>
               ))}
